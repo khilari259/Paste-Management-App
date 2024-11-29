@@ -1,0 +1,152 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #646cff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #344ceb;
+}
+
+/* Inputs and Buttons */
+input[type="text"],
+input[type="search"],
+textarea {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #646cff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #344ceb;
+}
+
+/* Paste Cards */
+.paste-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.paste-card .title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.paste-card .content {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.paste-card .date {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.paste-card .actions {
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+.paste-card .actions button {
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  input[type="text"],
+  input[type="search"],
+  textarea {
+    max-width: 100%;
+  }
+
+  .paste-card .actions {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+/* Miscellaneous */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
